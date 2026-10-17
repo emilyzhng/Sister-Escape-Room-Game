@@ -20820,8 +20820,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -2220, y: 1774.5}
-  m_SizeDelta: {x: 1000, y: 1000}
+  m_AnchoredPosition: {x: -1900, y: 1150}
+  m_SizeDelta: {x: 600, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1190813900
 MonoBehaviour:
@@ -24767,7 +24767,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   snake: {fileID: 8161772524583731488}
   startButton: {fileID: 1442732951}
-  endScreen: {fileID: 0}
+  endScreen: {fileID: 1540327336}
   scoreText: {fileID: 1049952958}
   grid: {fileID: 2074346801}
   foodsToWin: 3

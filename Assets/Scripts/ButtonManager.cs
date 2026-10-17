@@ -4,6 +4,7 @@ using UnityEditor.PackageManager.UI;
 using NUnit.Framework.Constraints;
 using UnityEditor.Rendering;
 using UnityEngine.UIElements;
+using TMPro;
 
 public class ButtonManager : MonoBehaviour
 {
@@ -73,6 +74,10 @@ public class ButtonManager : MonoBehaviour
    public GameObject goPapersButton;
    public GameObject ChestKeyButton;
 
+   //computer password
+   public TMP_InputField computerCodeInput;
+   public string computerCode = "1234";
+
    //temp buttons
    public GameObject tempComputerCodeFinishButton;
    public GameObject tempPaintingButton;
@@ -131,6 +136,12 @@ public class ButtonManager : MonoBehaviour
     goMedalButton.SetActive(false); 
     windowButton.SetActive(false);
     */
+
+    void Start()
+    {
+        if (computerCodeInput == null)
+            createComputerCodeInput();
+    }
 
     public void screenFading()
     {
@@ -302,6 +313,7 @@ public class ButtonManager : MonoBehaviour
             frontComputerUnlockView.SetActive(false);
             frontComputerView.SetActive(false);
             submitCompCodeButton.SetActive(false);
+            showComputerCodeInput(false);
             tempComputerCodeFinishButton.SetActive(false);
             computerButton.SetActive(true);
             goDrawersButton.SetActive(true);
@@ -542,6 +554,7 @@ public class ButtonManager : MonoBehaviour
         frontComputerView.SetActive(true);
         tempComputerCodeFinishButton.SetActive(true);
         submitCompCodeButton.SetActive(true);
+        showComputerCodeInput(true);
         computerButton.SetActive(false);
         goDrawersButton.SetActive(false);
 
@@ -550,22 +563,72 @@ public class ButtonManager : MonoBehaviour
             frontComputerUnlockView.SetActive(true);
             tempComputerCodeFinishButton.SetActive(false);
             submitCompCodeButton.SetActive(false);
+            showComputerCodeInput(false);
         }
     }
 
     public void clickSubmitComputerCode()
     {
+        if (!computerPasswrod && computerCodeInput != null)
+        {
+            if (computerCodeInput.text.Trim() == computerCode)
+            {
+                computerPasswrod = true;
+            }
+            else
+            {
+                Debug.Log("Wrong computer password");
+                computerCodeInput.text = "";
+            }
+        }
+
         if (computerPasswrod)
         {
             frontComputerUnlockView.SetActive(true);
             tempComputerCodeFinishButton.SetActive(false);
             submitCompCodeButton.SetActive(false);
+            showComputerCodeInput(false);
             frontComputerView.SetActive(false);
             goGameButton.SetActive(true);
             goLetterButton.SetActive(true);
             compDialogue.SetActive(true);
 
         }
+    }
+
+    void createComputerCodeInput()
+    {
+        GameObject inputObject = TMP_DefaultControls.CreateInputField(new TMP_DefaultControls.Resources());
+        inputObject.name = "ComputerCodeInput";
+
+        Transform submitButton = submitCompCodeButton.transform;
+        inputObject.transform.SetParent(submitButton.parent, false);
+        inputObject.transform.SetSiblingIndex(submitButton.GetSiblingIndex());
+
+        RectTransform rect = inputObject.GetComponent<RectTransform>();
+        rect.anchoredPosition = new Vector2(-200f, 397f);
+        rect.sizeDelta = new Vector2(500f, 170f);
+
+        computerCodeInput = inputObject.GetComponent<TMP_InputField>();
+        computerCodeInput.characterLimit = 10;
+        computerCodeInput.textComponent.fontSize = 80;
+        computerCodeInput.textComponent.alignment = TextAlignmentOptions.Center;
+
+        TMP_Text placeholder = (TMP_Text)computerCodeInput.placeholder;
+        placeholder.text = "Password";
+        placeholder.fontSize = 80;
+        placeholder.alignment = TextAlignmentOptions.Center;
+
+        inputObject.SetActive(false);
+    }
+
+    void showComputerCodeInput(bool show)
+    {
+        if (computerCodeInput == null)
+            return;
+
+        computerCodeInput.text = "";
+        computerCodeInput.gameObject.SetActive(show);
     }
 
     public void clickPainting()
@@ -732,6 +795,7 @@ public class ButtonManager : MonoBehaviour
     public void clickPopGame()
     {
         popComputerGame.SetActive(true);
+        compDialogue.SetActive(false);
         downButton.SetActive(false);
         goGameButton.SetActive(false);
         goLetterButton.SetActive(false);
@@ -827,6 +891,7 @@ public class ButtonManager : MonoBehaviour
     public void tempFinishComputerPassword()
     {
         computerPasswrod = true;
+        clickSubmitComputerCode();
     }
 
     public void tempFinishPainting()

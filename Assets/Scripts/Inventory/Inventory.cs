@@ -5,9 +5,13 @@ public class Inventory : MonoBehaviour
 {
     public List<string> inventoryItems = new List<string>();
 
+    // tells InventoryUI to redraw
+    public event System.Action Changed;
+
     public void AddItem(string item)
     {
         inventoryItems.Add(item);
+        Changed?.Invoke();
     }
 
     public void RemoveItem(string item)
@@ -15,6 +19,7 @@ public class Inventory : MonoBehaviour
         if (inventoryItems.Contains(item))
         {
             inventoryItems.Remove(item);
+            Changed?.Invoke();
         }
     }
 

@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 using UnityEditor.PackageManager.UI;
 using NUnit.Framework.Constraints;
 using UnityEditor.Rendering;
@@ -127,6 +128,8 @@ public class ButtonManager : MonoBehaviour
    private bool submittedGoldCoins = false;
    private bool closetUnlocked = false;
    private bool toyCollected = false;
+   private readonly HashSet<string> coinsCollected = new HashSet<string>();
+   private bool catMoved = false;
 
 
 
@@ -796,6 +799,7 @@ public class ButtonManager : MonoBehaviour
     {
         if (inventory.HasItem("ClosetKey"))
         {
+            inventory.RemoveItem("ClosetKey");
             leftClosetUnlockedView.SetActive(true);
             submitClosetKey.SetActive(false);
             closetUnlocked = true; 
@@ -813,9 +817,15 @@ public class ButtonManager : MonoBehaviour
 
     public void clickCat()
     {
+        // the toy was already used and the cat has moved
+        if (catMoved)
+            return;
+
         catDialogue.SetActive(true);
         if (inventory.HasItem("Toy"))
         {
+            inventory.RemoveItem("Toy");
+            catMoved = true;
             frontCatMoveView.SetActive(true);
             catButton.SetActive(false);
             goPapersButton.SetActive(true);
@@ -950,13 +960,29 @@ public class ButtonManager : MonoBehaviour
         boardPuzzle = true;
     }
 
-    public void addBookCoin()
+    // each gold coin can be picked up only once, even after the crow takes it
+    void collectCoin(string coin)
     {
-        inventory.AddItem("BookCoin");
+        if (coinsCollected.Contains(coin))
+            return;
+
+        coinsCollected.Add(coin);
+        inventory.AddItem(coin);
+
+        // hide the coin's click area (the button that was just clicked)
+        GameObject clicked = UnityEngine.EventSystems.EventSystem.current.currentSelectedGameObject;
+        if (clicked != null)
+            clicked.SetActive(false);
+
         foreach (string item in inventory.inventoryItems)
         {
             Debug.Log(item);
         }
+    }
+
+    public void addBookCoin()
+    {
+        collectCoin("BookCoin");
     }
 
     public void addDoorKey()
@@ -970,23 +996,14 @@ public class ButtonManager : MonoBehaviour
 
     public void addStandCoin()
     {
-        inventory.AddItem("StandCoin");
-        foreach (string item in inventory.inventoryItems)
-        {
-            Debug.Log(item);
-        }
+        collectCoin("StandCoin");
     }
 
     public void addDrawerCoin()
     {
+        // the drawer coin is only there once the board puzzle is solved
         if (boardPuzzle)
-        {
-            inventory.AddItem("DrawerCoin");
-        }
-        foreach (string item in inventory.inventoryItems)
-        {
-            Debug.Log(item);
-        }
+            collectCoin("DrawerCoin");
     }
 
     public void submitCrowCoins()

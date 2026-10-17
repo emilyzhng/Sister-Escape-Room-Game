@@ -3235,8 +3235,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 26.916, y: -50}
-  m_SizeDelta: {x: 956.76, y: 2521}
+  m_AnchoredPosition: {x: 26.916, y: 90.25}
+  m_SizeDelta: {x: 956.76, y: 2240.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &179422486
 MonoBehaviour:
@@ -4787,8 +4787,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -531.7307, y: -894.22363}
-  m_SizeDelta: {x: 2649.7385, y: 680.9199}
+  m_AnchoredPosition: {x: 0, y: -894.22363}
+  m_SizeDelta: {x: 3713.2, y: 680.9199}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &265897554
 MonoBehaviour:
@@ -12237,7 +12237,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &701003730
 RectTransform:
   m_ObjectHideFlags: 0
@@ -26292,8 +26292,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -527.82104, y: -822.72974}
-  m_SizeDelta: {x: 2844.358, y: 954.5405}
+  m_AnchoredPosition: {x: 0, y: -822.72974}
+  m_SizeDelta: {x: 3900, y: 954.5405}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1510205564
 MonoBehaviour:
@@ -29514,7 +29514,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1709045275
 RectTransform:
   m_ObjectHideFlags: 0
@@ -30085,7 +30085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 2010, y: -1085}
+  m_AnchoredPosition: {x: 1577.19, y: -1085}
   m_SizeDelta: {x: 450, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1745214268
@@ -36159,7 +36159,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2108888785
 RectTransform:
   m_ObjectHideFlags: 0

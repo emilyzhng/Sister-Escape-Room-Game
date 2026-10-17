@@ -149,6 +149,7 @@ public class ButtonManager : MonoBehaviour
         if (frontView.activeSelf)
         {
             frontView.SetActive(false);
+            catDialogue.SetActive(false);
             leftView.SetActive(true);
             downButton.SetActive(false);
             leftButton.SetActive(false);
@@ -186,6 +187,7 @@ public class ButtonManager : MonoBehaviour
         if (frontView.activeSelf)
         {
             frontView.SetActive(false);
+            catDialogue.SetActive(false);
             rightView.SetActive(true);
             downButton.SetActive(false);
             rightButton.SetActive(false);
@@ -223,6 +225,7 @@ public class ButtonManager : MonoBehaviour
         if (frontView.activeSelf && screwdriverTaken)
         {
             frontView.SetActive(false);
+            catDialogue.SetActive(false);
             downScrewlessDriverView.SetActive(true);
             downButton.SetActive(false);
             rightButton.SetActive(false);
@@ -236,6 +239,7 @@ public class ButtonManager : MonoBehaviour
         if (frontView.activeSelf)
         {
             frontView.SetActive(false);
+            catDialogue.SetActive(false);
             downView.SetActive(true);
             downButton.SetActive(false);
             rightButton.SetActive(false);
@@ -453,6 +457,7 @@ public class ButtonManager : MonoBehaviour
     public void windowClick()
     {
         frontView.SetActive(false);
+        catDialogue.SetActive(false);
         frontWindowView.SetActive(true);
         rightButton.SetActive(false);
         leftButton.SetActive(false);
@@ -519,6 +524,7 @@ public class ButtonManager : MonoBehaviour
     {
         frontDeskView.SetActive(true);
         frontView.SetActive(false);
+        catDialogue.SetActive(false);
         rightButton.SetActive(false);
         leftButton.SetActive(false);
         windowButton.SetActive(false);
@@ -602,6 +608,7 @@ public class ButtonManager : MonoBehaviour
     {
         frontMedalView.SetActive(true);
         frontView.SetActive(false);
+        catDialogue.SetActive(false);
         rightButton.SetActive(false);
         leftButton.SetActive(false);
         goDeskButton.SetActive(false);
@@ -616,6 +623,7 @@ public class ButtonManager : MonoBehaviour
     {
         frontChestView.SetActive(true);
         frontView.SetActive(false);
+        catDialogue.SetActive(false);
         rightButton.SetActive(false);
         leftButton.SetActive(false);
         goDeskButton.SetActive(false);
@@ -630,6 +638,7 @@ public class ButtonManager : MonoBehaviour
     {
         frontStandView.SetActive(true);
         frontView.SetActive(false);
+        catDialogue.SetActive(false);
         rightButton.SetActive(false);
         leftButton.SetActive(false);
         goDeskButton.SetActive(false);

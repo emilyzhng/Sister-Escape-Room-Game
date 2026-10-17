@@ -10,6 +10,12 @@ public class DropManager : MonoBehaviour, IDropHandler
     private bool correct = false;
     public static int correctBoxes = 0;
 
+    private void Awake()
+    {
+        // play mode can start without a domain reload, so don't trust the old count
+        correctBoxes = 0;
+    }
+
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag == null)
@@ -28,8 +34,10 @@ public class DropManager : MonoBehaviour, IDropHandler
             correct = true;
             correctBoxes++;
 
-            // Snap to the drop zone's position
+            // Snap to the drop zone's position and keep it there
             draggedRect.position = dropRect.position;
+            item.placed = true;
+            item.locked = true;
 
             Debug.Log("Correct! " + correctBoxes);
 

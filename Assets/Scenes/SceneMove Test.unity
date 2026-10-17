@@ -11666,6 +11666,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragDrop
   item: gat
+  returnIfNotPlaced: 1
 --- !u!114 &688723046
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16510,6 +16511,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragDrop
   item: height
+  returnIfNotPlaced: 1
 --- !u!114 &978490763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25588,6 +25590,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragDrop
   item: mock
+  returnIfNotPlaced: 1
 --- !u!114 &1477029632
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26527,6 +26530,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DragDrop
   item: illiad
+  returnIfNotPlaced: 1
 --- !u!114 &1517207821
 MonoBehaviour:
   m_ObjectHideFlags: 0

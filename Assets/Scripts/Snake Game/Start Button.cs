@@ -147,6 +147,9 @@ public class GameManager : MonoBehaviour
         {
             endScreen.SetActive(false);
         }
-        Time.timeScale = 0f;
+
+        // popup is closed: unpause the rest of the game
+        // (the snake itself waits for Start via gameStarted, so it doesn't need the pause)
+        Time.timeScale = 1f;
     }
 }

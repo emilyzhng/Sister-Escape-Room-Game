@@ -56,7 +56,8 @@ public class DialogueManager : MonoBehaviour
         foreach (char letter in sentence.ToCharArray())
         {
             dialogueText.text += letter;
-            yield return new WaitForSeconds(1f / typingSpeed);
+            // realtime so dialogue keeps typing even if the game is paused
+            yield return new WaitForSecondsRealtime(1f / typingSpeed);
         }
     }
 

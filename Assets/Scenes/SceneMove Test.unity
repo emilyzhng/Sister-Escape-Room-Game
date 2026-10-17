@@ -36895,6 +36895,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6200000002}
+  - component: {fileID: 6400000001}
+  - component: {fileID: 6400000002}
   - component: {fileID: 6200000003}
   m_Layer: 5
   m_Name: MedalKnob1
@@ -36920,7 +36922,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -922, y: 795}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 135.7, y: 135.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6200000003
 MonoBehaviour:
@@ -36943,6 +36945,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6200000005}
+  - component: {fileID: 6400000003}
+  - component: {fileID: 6400000004}
   - component: {fileID: 6200000006}
   m_Layer: 5
   m_Name: MedalKnob2
@@ -36968,7 +36972,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -190, y: 931}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 135.7, y: 135.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6200000006
 MonoBehaviour:
@@ -36991,6 +36995,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6200000008}
+  - component: {fileID: 6400000005}
+  - component: {fileID: 6400000006}
   - component: {fileID: 6200000009}
   m_Layer: 5
   m_Name: MedalKnob3
@@ -37016,7 +37022,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 407, y: 605}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 135.7, y: 135.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6200000009
 MonoBehaviour:
@@ -37039,6 +37045,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6200000011}
+  - component: {fileID: 6400000007}
+  - component: {fileID: 6400000008}
   - component: {fileID: 6200000012}
   m_Layer: 5
   m_Name: MedalKnob4
@@ -37064,7 +37072,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1125, y: 795}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 135.7, y: 135.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &6200000012
 MonoBehaviour:
@@ -37115,7 +37123,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -922, y: 795}
-  m_SizeDelta: {x: 460, y: 1805}
+  m_SizeDelta: {x: 564.3, y: 1861.4}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!225 &6200000015
 CanvasGroup:
@@ -37155,7 +37163,7 @@ GameObject:
   - component: {fileID: 6200000019}
   - component: {fileID: 6200000020}
   m_Layer: 5
-  m_Name: Ribbon
+  m_Name: Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37177,8 +37185,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 1345}
+  m_AnchoredPosition: {x: 0, y: 110}
+  m_SizeDelta: {x: 564.3, y: 1971.4}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &6200000019
 CanvasRenderer:
@@ -37201,14 +37209,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.22, g: 0.33, b: 0.62, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 6228d20821454285bcb3f1b9044ae7c8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -37251,11 +37259,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6200000014}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 460, y: 460}
-  m_Pivot: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -1575.7}
+  m_SizeDelta: {x: 507.1, y: 507.1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6200000023
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37277,7 +37285,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.95, g: 0.77, b: 0.25, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -37346,7 +37354,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -190, y: 931}
-  m_SizeDelta: {x: 460, y: 1805}
+  m_SizeDelta: {x: 564.3, y: 1861.4}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!225 &6200000028
 CanvasGroup:
@@ -37386,7 +37394,7 @@ GameObject:
   - component: {fileID: 6200000032}
   - component: {fileID: 6200000033}
   m_Layer: 5
-  m_Name: Ribbon
+  m_Name: Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37408,8 +37416,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 1345}
+  m_AnchoredPosition: {x: 0, y: 110}
+  m_SizeDelta: {x: 564.3, y: 1971.4}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &6200000032
 CanvasRenderer:
@@ -37432,14 +37440,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.22, g: 0.33, b: 0.62, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: bb31848049c14bc19d6c9d78f17dadc2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -37482,11 +37490,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6200000027}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 460, y: 460}
-  m_Pivot: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -1575.7}
+  m_SizeDelta: {x: 507.1, y: 507.1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6200000036
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37508,7 +37516,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.95, g: 0.77, b: 0.25, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -37577,7 +37585,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 407, y: 605}
-  m_SizeDelta: {x: 460, y: 1805}
+  m_SizeDelta: {x: 564.3, y: 1861.4}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!225 &6200000041
 CanvasGroup:
@@ -37617,7 +37625,7 @@ GameObject:
   - component: {fileID: 6200000045}
   - component: {fileID: 6200000046}
   m_Layer: 5
-  m_Name: Ribbon
+  m_Name: Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37639,8 +37647,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 1345}
+  m_AnchoredPosition: {x: 0, y: 110}
+  m_SizeDelta: {x: 564.3, y: 1971.4}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &6200000045
 CanvasRenderer:
@@ -37663,14 +37671,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.22, g: 0.33, b: 0.62, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 0149ac9def5143b48709469f5e6d9c8c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -37713,11 +37721,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6200000040}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 460, y: 460}
-  m_Pivot: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -1575.7}
+  m_SizeDelta: {x: 507.1, y: 507.1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6200000049
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37739,7 +37747,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.95, g: 0.77, b: 0.25, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -37808,7 +37816,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1125, y: 795}
-  m_SizeDelta: {x: 460, y: 1805}
+  m_SizeDelta: {x: 564.3, y: 1861.4}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!225 &6200000054
 CanvasGroup:
@@ -37848,7 +37856,7 @@ GameObject:
   - component: {fileID: 6200000058}
   - component: {fileID: 6200000059}
   m_Layer: 5
-  m_Name: Ribbon
+  m_Name: Art
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37870,8 +37878,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 160, y: 1345}
+  m_AnchoredPosition: {x: 0, y: 110}
+  m_SizeDelta: {x: 564.3, y: 1971.4}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &6200000058
 CanvasRenderer:
@@ -37894,14 +37902,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.22, g: 0.33, b: 0.62, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: de9645ff2c7e46bfb4a885866e6fca65, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -37944,11 +37952,11 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 6200000053}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 460, y: 460}
-  m_Pivot: {x: 0.5, y: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -1575.7}
+  m_SizeDelta: {x: 507.1, y: 507.1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6200000062
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37970,7 +37978,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
   m_Material: {fileID: 0}
-  m_Color: {r: 0.95, g: 0.77, b: 0.25, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -38019,3 +38027,155 @@ MonoBehaviour:
     sentences:
     - name: Me
       text: The medals are finally in order!
+--- !u!222 &6400000001
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200000001}
+  m_CullTransparentMesh: 1
+--- !u!114 &6400000002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200000001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6ff1d42d960045e494ce2e30d62e4da0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &6400000003
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200000004}
+  m_CullTransparentMesh: 1
+--- !u!114 &6400000004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200000004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6ff1d42d960045e494ce2e30d62e4da0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &6400000005
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200000007}
+  m_CullTransparentMesh: 1
+--- !u!114 &6400000006
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200000007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6ff1d42d960045e494ce2e30d62e4da0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &6400000007
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200000010}
+  m_CullTransparentMesh: 1
+--- !u!114 &6400000008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6200000010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 6ff1d42d960045e494ce2e30d62e4da0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1

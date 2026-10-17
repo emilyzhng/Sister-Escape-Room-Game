@@ -4,9 +4,9 @@ using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using TMPro;
 
-// Hover over a medal to flip it and see the clue on its back;
-// move the mouse away and it flips back.
-public class MedalFlip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+// Click a medal to flip it and see the clue on its back;
+// it flips back to the front by itself after showBackSeconds.
+public class MedalFlip : MonoBehaviour, IPointerClickHandler
 {
     [Header("Back clue (backText is also the number used for the order check)")]
     public string backText = "1";
@@ -19,13 +19,12 @@ public class MedalFlip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     public Color backColor = new Color(0.93f, 0.76f, 0.3f, 1f);   // only used when there is no back image
 
     public float flipDuration = 0.3f;
+    public float showBackSeconds = 0.36f;
 
     private Image image;
     private Sprite frontSprite;
     private Color frontColor;
     private TMP_Text clueText;
-    private bool showingBack = false;
-    private bool wantBack = false;
     private bool isFlipping = false;
 
     private void Awake()
@@ -46,20 +45,19 @@ public class MedalFlip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
     {
         // leaving the view: reset to the front instantly
         isFlipping = false;
-        wantBack = false;
-        showingBack = false;
         showSide(false);
         setScaleX(1f);
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    public void OnPointerClick(PointerEventData eventData)
     {
-        flipTo(true);
-    }
+        // releasing a drag also counts as a click; only flip on a real click
+        if (eventData.dragging)
+            return;
 
-    public void OnPointerExit(PointerEventData eventData)
-    {
-        flipTo(false);
+        // already showing the back or mid-flip: ignore extra clicks
+        if (!isFlipping)
+            StartCoroutine(ShowBack());
     }
 
     public int Number()
@@ -68,31 +66,24 @@ public class MedalFlip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandle
         return int.TryParse(backText, out number) ? number : 0;
     }
 
-    void flipTo(bool back)
-    {
-        wantBack = back;
-
-        // a running flip picks up the new target when it finishes
-        if (!isFlipping && showingBack != wantBack)
-            StartCoroutine(Flip());
-    }
-
-    IEnumerator Flip()
+    IEnumerator ShowBack()
     {
         isFlipping = true;
-        float half = flipDuration / 2f;
 
-        while (showingBack != wantBack)
-        {
-            yield return ScaleX(1f, 0f, half);
-
-            showingBack = !showingBack;
-            showSide(showingBack);
-
-            yield return ScaleX(0f, 1f, half);
-        }
+        yield return Flip(true);
+        yield return new WaitForSecondsRealtime(showBackSeconds);
+        yield return Flip(false);
 
         isFlipping = false;
+    }
+
+    IEnumerator Flip(bool toBack)
+    {
+        float half = flipDuration / 2f;
+
+        yield return ScaleX(1f, 0f, half);
+        showSide(toBack);
+        yield return ScaleX(0f, 1f, half);
     }
 
     IEnumerator ScaleX(float from, float to, float duration)

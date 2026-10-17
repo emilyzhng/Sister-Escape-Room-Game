@@ -6,7 +6,8 @@ using UnityEngine.EventSystems;
 // The medal's pivot (top of the ribbon) snaps onto the knob.
 // Dropping on a taken knob swaps the two medals; dropping elsewhere puts it back.
 [RequireComponent(typeof(CanvasGroup))]
-public class MedalDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class MedalDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler,
+    IPointerEnterHandler, IPointerExitHandler
 {
     public MedalKnob startKnob;     // used when shuffleOnStart is off
     public bool shuffleOnStart = true;
@@ -63,6 +64,23 @@ public class MedalDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
         }
     }
 
+    // hand cursor over the medal, and kept for the whole drag
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        HandCursor.Show(this);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        if (!eventData.dragging)
+            HandCursor.Hide(this);
+    }
+
+    private void OnDisable()
+    {
+        HandCursor.Hide(this);
+    }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         if (locked)
@@ -72,6 +90,7 @@ public class MedalDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
             return;
         }
 
+        HandCursor.Show(this);
         canvasGroup.blocksRaycasts = false;
         transform.SetAsLastSibling();
     }
@@ -84,6 +103,10 @@ public class MedalDrag : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDra
     public void OnEndDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = true;
+
+        // the medal may snap away from the mouse; if the mouse is still over it,
+        // OnPointerEnter turns the hand back on next frame
+        HandCursor.Hide(this);
 
         MedalKnob fromKnob = knob;
         MedalKnob target = findNearestKnob();

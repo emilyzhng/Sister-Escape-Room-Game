@@ -83,10 +83,10 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        Text legacyText = scoreText.GetComponent<Text>();
+        Text text = scoreText.GetComponent<Text>();
 
-        if (legacyText != null)
-            legacyText.text = "Food: " + foodsCollected + " / " + foodsToWin;
+        if (text != null)
+            text.text = "Food: " + foodsCollected + " / " + foodsToWin;
     }
 
     private void EndGame()

@@ -72,7 +72,13 @@ public class DropBooks : MonoBehaviour, IDropHandler
             return;
 
         foreach (DragDrop piece in inPlace)
+        {
             piece.locked = true;
+
+            HandCursorOnHover hover = piece.GetComponent<HandCursorOnHover>();
+            if (hover != null)
+                hover.enabled = false;
+        }
 
         if (completedObject != null)
             completedObject.SetActive(true);

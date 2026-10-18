@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class HandCursorOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class HandCursorOnHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IEndDragHandler
 {
     public void OnPointerEnter(PointerEventData eventData)
     {
@@ -9,6 +9,12 @@ public class HandCursorOnHover : MonoBehaviour, IPointerEnterHandler, IPointerEx
     }
 
     public void OnPointerExit(PointerEventData eventData)
+    {
+        if (!eventData.dragging)
+            HandCursor.Hide(this);
+    }
+
+    public void OnEndDrag(PointerEventData eventData)
     {
         HandCursor.Hide(this);
     }

@@ -168,7 +168,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -187,7 +187,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -30, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -259,7 +259,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -278,7 +278,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -23.0, z: -95, w: -30}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -471,7 +471,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -29.0, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -680,7 +680,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -699,7 +699,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -23.0, z: -95, w: -30}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1480,7 +1480,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -1499,7 +1499,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2206,7 +2206,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -2225,7 +2225,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2372,7 +2372,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -2391,7 +2391,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -23.0, z: -95, w: -30}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3381,7 +3381,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -3400,7 +3400,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -29.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4002,7 +4002,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -4021,7 +4021,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -29.0, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4318,7 +4318,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -4337,7 +4337,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4409,7 +4409,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: note
   completedObject: {fileID: 1794194859}
   need: 1
@@ -4428,7 +4428,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5147,7 +5147,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: note
   completedObject: {fileID: 1794194859}
   need: 1
@@ -5166,7 +5166,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6537,7 +6537,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -6556,7 +6556,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -30, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6804,7 +6804,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -6823,7 +6823,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -29.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6895,7 +6895,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -6914,7 +6914,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7030,7 +7030,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -7049,7 +7049,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -29.0, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7208,7 +7208,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -7227,7 +7227,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7299,7 +7299,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -7318,7 +7318,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -23.0, z: -95, w: -30}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7390,7 +7390,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -7409,7 +7409,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7481,7 +7481,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -7500,7 +7500,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7572,7 +7572,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -7591,7 +7591,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7663,7 +7663,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -7682,7 +7682,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -7754,7 +7754,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4ef6d8c8fcef8740903b1851b9b0663, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManager
+  m_EditorClassIdentifier: Assembly-CSharp::DropBooks
   correctDrop: mock
   completedObject: {fileID: 1066036631}
 --- !u!114 &469549931
@@ -7844,7 +7844,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -7863,7 +7863,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -29.0, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9258,7 +9258,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: note
   completedObject: {fileID: 1794194859}
   need: 1
@@ -9277,7 +9277,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10271,7 +10271,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -10290,7 +10290,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -30, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -10645,7 +10645,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -10664,7 +10664,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11094,7 +11094,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -11113,7 +11113,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -29.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11766,7 +11766,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -11785,7 +11785,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -30, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12395,7 +12395,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -12414,7 +12414,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -30, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13037,7 +13037,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -13056,7 +13056,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13261,7 +13261,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -13280,7 +13280,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13906,7 +13906,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -13925,7 +13925,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -29.0, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -13960,6 +13960,7 @@ GameObject:
   - component: {fileID: 798520471}
   - component: {fileID: 798520470}
   - component: {fileID: 798520469}
+  - component: {fileID: 6600000001}
   m_Layer: 5
   m_Name: ScrewDriverButton
   m_TagString: Untagged
@@ -14070,7 +14071,7 @@ RectTransform:
   m_GameObject: {fileID: 798520468}
   m_LocalRotation: {x: -0, y: -0, z: -0.33006462, w: 0.9439584}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.0582, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 976600300}
@@ -14078,8 +14079,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -38.545}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -69.818115, y: -416.2271}
-  m_SizeDelta: {x: 51.8747, y: 415.7656}
+  m_AnchoredPosition: {x: -77, y: -428}
+  m_SizeDelta: {x: 220, y: 340}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &810843782
 GameObject:
@@ -14554,7 +14555,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: note
   completedObject: {fileID: 1794194859}
   need: 1
@@ -14573,7 +14574,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14915,7 +14916,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -14934,7 +14935,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -23.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15006,7 +15007,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -15025,7 +15026,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -23.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15560,7 +15561,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -15579,7 +15580,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -23.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15651,7 +15652,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4ef6d8c8fcef8740903b1851b9b0663, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManager
+  m_EditorClassIdentifier: Assembly-CSharp::DropBooks
   correctDrop: gat
   completedObject: {fileID: 1066036631}
 --- !u!114 &926294552
@@ -15741,7 +15742,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -15760,7 +15761,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -30, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15832,7 +15833,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -15851,7 +15852,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -23.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -16417,7 +16418,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -16436,7 +16437,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -29.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -16913,7 +16914,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4f010f6ef8a75e4c98a2049fa96e319, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerboard
+  m_EditorClassIdentifier: Assembly-CSharp::DropBoardPhoto
   correctDrop: photo2
   completedObject: {fileID: 2042527410}
 --- !u!114 &1004941868
@@ -17583,7 +17584,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -17602,7 +17603,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -29.0, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -17994,7 +17995,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -18013,7 +18014,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -18380,7 +18381,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -18399,7 +18400,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -19228,7 +19229,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4ef6d8c8fcef8740903b1851b9b0663, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManager
+  m_EditorClassIdentifier: Assembly-CSharp::DropBooks
   correctDrop: height
   completedObject: {fileID: 1066036631}
 --- !u!114 &1076382126
@@ -19641,7 +19642,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -19660,7 +19661,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -19852,7 +19853,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -19871,7 +19872,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -23.0, z: -95, w: -30}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -20065,7 +20066,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -20084,7 +20085,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -23.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -20289,7 +20290,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -20308,7 +20309,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -29.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -20380,7 +20381,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -20399,7 +20400,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -29.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -21538,7 +21539,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: note
   completedObject: {fileID: 1794194859}
   need: 1
@@ -21557,7 +21558,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -21766,7 +21767,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -21785,7 +21786,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -22077,7 +22078,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 163710a3ce8e6944e81188270a597073, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 340104b8f1514263a38a85facf757501, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -22384,7 +22385,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -22403,7 +22404,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -30, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -23115,7 +23116,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -23134,7 +23135,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -23.0, z: -95, w: -30}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -23339,7 +23340,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -23358,7 +23359,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -23430,7 +23431,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: note
   completedObject: {fileID: 1794194859}
   need: 1
@@ -23449,7 +23450,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -23.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -23521,7 +23522,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -23540,7 +23541,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -23.0, z: -95, w: -30}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -23612,7 +23613,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -23631,7 +23632,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -23866,7 +23867,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -23885,7 +23886,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -29.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -25141,7 +25142,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: note
   completedObject: {fileID: 1794194859}
   need: 1
@@ -25160,7 +25161,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -25365,7 +25366,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -25384,7 +25385,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -30, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -25456,7 +25457,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -25475,7 +25476,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -23.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -26063,7 +26064,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -26082,7 +26083,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -26630,7 +26631,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4f010f6ef8a75e4c98a2049fa96e319, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerboard
+  m_EditorClassIdentifier: Assembly-CSharp::DropBoardPhoto
   correctDrop: photo4
   completedObject: {fileID: 2042527410}
 --- !u!114 &1521387346
@@ -26870,7 +26871,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -26889,7 +26890,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -23.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -27489,7 +27490,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -27508,7 +27509,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -27580,7 +27581,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -27599,7 +27600,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -27671,7 +27672,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: note
   completedObject: {fileID: 1794194859}
   need: 1
@@ -27690,7 +27691,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -28209,7 +28210,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -28228,7 +28229,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -23.0, z: -95, w: -30}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -29826,7 +29827,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -29845,7 +29846,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -29917,7 +29918,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -29936,7 +29937,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -29.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -30244,7 +30245,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -30263,7 +30264,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -29.0, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -30335,7 +30336,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -30354,7 +30355,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -29.0, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -30829,7 +30830,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -30848,7 +30849,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -29.0, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -32638,7 +32639,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -32657,7 +32658,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -29.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -32729,7 +32730,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -32748,7 +32749,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -32953,7 +32954,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -32972,7 +32973,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -23.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -33401,7 +33402,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -33420,7 +33421,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -33492,7 +33493,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4f010f6ef8a75e4c98a2049fa96e319, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerboard
+  m_EditorClassIdentifier: Assembly-CSharp::DropBoardPhoto
   correctDrop: photo1
   completedObject: {fileID: 2042527410}
 --- !u!114 &1908091270
@@ -33582,7 +33583,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4f010f6ef8a75e4c98a2049fa96e319, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerboard
+  m_EditorClassIdentifier: Assembly-CSharp::DropBoardPhoto
   correctDrop: photo5
   completedObject: {fileID: 2042527410}
 --- !u!114 &1920031403
@@ -34021,7 +34022,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -34040,7 +34041,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -34352,7 +34353,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4ef6d8c8fcef8740903b1851b9b0663, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManager
+  m_EditorClassIdentifier: Assembly-CSharp::DropBooks
   correctDrop: illiad
   completedObject: {fileID: 1066036631}
 --- !u!114 &1993973412
@@ -34666,7 +34667,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4f010f6ef8a75e4c98a2049fa96e319, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerboard
+  m_EditorClassIdentifier: Assembly-CSharp::DropBoardPhoto
   correctDrop: photo6
   completedObject: {fileID: 2042527410}
 --- !u!114 &2022459832
@@ -34756,7 +34757,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -34775,7 +34776,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -35083,7 +35084,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: note
   completedObject: {fileID: 1794194859}
   need: 1
@@ -35102,7 +35103,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -26.0, z: -95, w: -25.5}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -35174,7 +35175,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -35193,7 +35194,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -35398,7 +35399,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d4f010f6ef8a75e4c98a2049fa96e319, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerboard
+  m_EditorClassIdentifier: Assembly-CSharp::DropBoardPhoto
   correctDrop: photo3
   completedObject: {fileID: 2042527410}
 --- !u!114 &2059727384
@@ -35935,7 +35936,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -35954,7 +35955,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -23.0, z: -95, w: -30}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -36116,7 +36117,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -36135,7 +36136,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -25.5, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -36382,7 +36383,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b5bb5e57aa69ff143bdaa16b034bfeec, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManagerstand
+  m_EditorClassIdentifier: Assembly-CSharp::DropMusicNotes
   correctDrop: na
   completedObject: {fileID: 1794194859}
   need: 0
@@ -36401,7 +36402,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0.21176471}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_RaycastPadding: {x: -95, y: -30, z: -95, w: -26.0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -38200,3 +38201,15 @@ MonoBehaviour:
   canvas: {fileID: 0}
   roundedBox: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   circle: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+--- !u!114 &6600000001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798520468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 744dee871883443eb28a4d65d8e76a46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HandCursorOnHover

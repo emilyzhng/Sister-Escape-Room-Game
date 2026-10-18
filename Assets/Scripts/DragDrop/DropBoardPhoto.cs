@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DropManagerboard : MonoBehaviour, IDropHandler
+public class DropBoardPhoto : MonoBehaviour, IDropHandler
 {
     public string correctDrop;
     public GameObject completedObject;

@@ -29,7 +29,6 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         if (locked)
         {
-            // already in its correct spot: cancel the drag
             eventData.pointerDrag = null;
             return;
         }
@@ -43,6 +42,11 @@ public class DragDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, I
     {
         rectTransform.anchoredPosition += eventData.delta;
         canvasGroup.alpha = 0.5f;
+    }
+
+    public void ReturnToStart()
+    {
+        rectTransform.anchoredPosition = startPosition;
     }
 
     public void OnEndDrag(PointerEventData eventData)

@@ -150,6 +150,13 @@ public class ButtonManager : MonoBehaviour
             createComputerCodeInput();
 
         createPasswordErrorText();
+
+        InventoryUI inventoryUI = inventory.GetComponent<InventoryUI>();
+        foreach (DialogueManager dialogueManager in FindObjectsByType<DialogueManager>(FindObjectsSortMode.None))
+        {
+            if (dialogueManager.Popup == crowPopDialogue && inventoryUI != null)
+                dialogueManager.Ended += inventoryUI.ShowCoinGoal;
+        }
     }
 
     public void screenFading()
@@ -470,6 +477,10 @@ public class ButtonManager : MonoBehaviour
     public void rugClick()
     {
         rugButton.SetActive(false);
+
+        if (screwdriverTaken)
+            return;
+
         downScrewDriverView.SetActive(true);
         downView.SetActive(false);
         screwdriverButton.SetActive(true);
@@ -500,6 +511,10 @@ public class ButtonManager : MonoBehaviour
 
     public void screwdriverClick()
     {
+        if (screwdriverTaken)
+            return;
+
+        screwdriverButton.SetActive(false);
         downScrewlessDriverView.SetActive(true);
         downScrewDriverView.SetActive(false);
         inventory.AddItem("screwdriver");

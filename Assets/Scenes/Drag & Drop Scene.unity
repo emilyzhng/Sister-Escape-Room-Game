@@ -168,7 +168,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4ef6d8c8fcef8740903b1851b9b0663, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManager
+  m_EditorClassIdentifier: Assembly-CSharp::DropBooks
   correctDrop: orange
   completedObject: {fileID: 982993490}
 --- !u!114 &248349641
@@ -258,7 +258,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4ef6d8c8fcef8740903b1851b9b0663, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManager
+  m_EditorClassIdentifier: Assembly-CSharp::DropBooks
   correctDrop: green
   completedObject: {fileID: 982993490}
 --- !u!114 &342388723
@@ -523,7 +523,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4ef6d8c8fcef8740903b1851b9b0663, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManager
+  m_EditorClassIdentifier: Assembly-CSharp::DropBooks
   correctDrop: yellow
   completedObject: {fileID: 982993490}
 --- !u!1 &619394800
@@ -1258,7 +1258,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f4ef6d8c8fcef8740903b1851b9b0663, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DropManager
+  m_EditorClassIdentifier: Assembly-CSharp::DropBooks
   correctDrop: red
   completedObject: {fileID: 982993490}
 --- !u!114 &1633368557

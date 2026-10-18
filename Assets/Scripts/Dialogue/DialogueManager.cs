@@ -61,8 +61,11 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
+    public event System.Action Ended;
+
     void EndDialogue()
     {
         continueButton.SetActive(false);
+        Ended?.Invoke();
     }
 }

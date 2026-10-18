@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-// Shows what the player is carrying as a column of slots on the right edge of the screen.
+// Shows what the player is carrying as a column of slots down the left edge of the screen.
 // Items with the same display name (e.g. the three gold coins) share one slot with a count.
 public class InventoryUI : MonoBehaviour
 {
@@ -30,17 +30,23 @@ public class InventoryUI : MonoBehaviour
         new ItemLook { item = "DoorKey", displayName = "Door Key" },
     };
 
+    [Header("Coin goal (shown after the crow asks for them)")]
+    public List<string> goalCoins = new List<string> { "BookCoin", "StandCoin", "DrawerCoin" };
+    public Color missingCoinColor = new Color(0.55f, 0.55f, 0.55f, 0.8f);
+
     [Header("Shapes for slots and placeholder icons (Unity's built-in UISprite and Knob)")]
     public Sprite roundedBox;
     public Sprite circle;
 
     [Header("Layout (canvas units, from the screen center)")]
-    public Vector2 firstSlotPosition = new Vector2(2120f, 1380f);
+    public Vector2 firstSlotPosition = new Vector2(-2140f, 1380f);
     public float slotSize = 260f;
     public float slotSpacing = 30f;
 
     private RectTransform bar;
     private readonly List<GameObject> slots = new List<GameObject>();
+    private bool showCoinGoal = false;
+    private readonly HashSet<string> coinsFound = new HashSet<string>();
 
     private void Start()
     {
@@ -65,11 +71,34 @@ public class InventoryUI : MonoBehaviour
             inventory.Changed -= Refresh;
     }
 
+    public void ShowCoinGoal()
+    {
+        if (showCoinGoal)
+            return;
+
+        showCoinGoal = true;
+        Refresh();
+    }
+
     void Refresh()
     {
         foreach (GameObject slot in slots)
             Destroy(slot);
         slots.Clear();
+
+        foreach (string item in inventory.inventoryItems)
+        {
+            if (goalCoins.Contains(item))
+                coinsFound.Add(item);
+        }
+
+        int index = 0;
+
+        if (showCoinGoal)
+        {
+            foreach (string coin in goalCoins)
+                slots.Add(createSlot(findLook(coin), 1, index++, !coinsFound.Contains(coin)));
+        }
 
         // group by display name, in the order things were picked up
         List<string> order = new List<string>();
@@ -78,6 +107,9 @@ public class InventoryUI : MonoBehaviour
 
         foreach (string item in inventory.inventoryItems)
         {
+            if (showCoinGoal && goalCoins.Contains(item))
+                continue;
+
             ItemLook look = findLook(item);
 
             if (!counts.ContainsKey(look.displayName))
@@ -91,7 +123,7 @@ public class InventoryUI : MonoBehaviour
         }
 
         for (int i = 0; i < order.Count; i++)
-            slots.Add(createSlot(lookFor[order[i]], counts[order[i]], i));
+            slots.Add(createSlot(lookFor[order[i]], counts[order[i]], index++, false));
     }
 
     ItemLook findLook(string item)
@@ -105,7 +137,7 @@ public class InventoryUI : MonoBehaviour
         return new ItemLook { item = item, displayName = item };
     }
 
-    GameObject createSlot(ItemLook look, int count, int index)
+    GameObject createSlot(ItemLook look, int count, int index, bool missing)
     {
         // slot background
         GameObject slot = newUI("Slot " + look.displayName, bar);
@@ -129,12 +161,15 @@ public class InventoryUI : MonoBehaviour
         {
             icon.sprite = look.icon;
             icon.preserveAspect = true;
+            if (missing)
+                icon.color = missingCoinColor;
         }
         else if (look.isCoin)
         {
             icon.sprite = circle;
-            icon.color = new Color(0.95f, 0.77f, 0.25f);
-            addText(iconRect, "$", slotSize * 0.4f, new Color(0.45f, 0.3f, 0.05f));
+            icon.color = missing ? missingCoinColor : new Color(0.95f, 0.77f, 0.25f);
+            addText(iconRect, "$", slotSize * 0.4f,
+                missing ? new Color(0.35f, 0.35f, 0.35f) : new Color(0.45f, 0.3f, 0.05f));
         }
         else
         {

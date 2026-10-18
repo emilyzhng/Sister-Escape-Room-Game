@@ -26974,9 +26974,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: c950c802546f42db87ecf3da2b00754f, type: 3}
   m_Type: 0
-  m_PreserveAspect: 0
+  m_PreserveAspect: 1
   m_FillCenter: 1
   m_FillMethod: 4
   m_FillAmount: 1
@@ -38206,6 +38206,9 @@ MonoBehaviour:
   canvas: {fileID: 0}
   roundedBox: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   circle: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  viewables:
+  - item: MusicSheet
+    image: {fileID: 21300000, guid: c950c802546f42db87ecf3da2b00754f, type: 3}
 --- !u!114 &6600000001
 MonoBehaviour:
   m_ObjectHideFlags: 0

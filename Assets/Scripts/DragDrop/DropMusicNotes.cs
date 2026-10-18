@@ -7,6 +7,7 @@ public class DropMusicNotes : MonoBehaviour, IDropHandler
     public string correctDrop;
     public GameObject completedObject;
     public bool need;
+    public string hintItem = "MusicSheet";
 
     private static readonly List<DropMusicNotes> answerSpots = new List<DropMusicNotes>();
 
@@ -56,7 +57,6 @@ public class DropMusicNotes : MonoBehaviour, IDropHandler
            if (spot.hasNote(pieces))
            {
                 filled++;
-                Debug.Log(filled);
            }
         }
 
@@ -66,6 +66,10 @@ public class DropMusicNotes : MonoBehaviour, IDropHandler
         {
             if (completedObject != null)
                 completedObject.SetActive(true);
+
+            Inventory inventory = FindFirstObjectByType<Inventory>();
+            if (inventory != null)
+                inventory.RemoveItem(hintItem);
 
             Debug.Log("solved!");
         }

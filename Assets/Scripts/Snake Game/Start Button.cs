@@ -15,6 +15,10 @@ public class GameManager : MonoBehaviour
     public int foodsToWin = 10;
     public GameObject popup;
 
+    public Inventory inventory;
+    public string rewardItem = "MusicSheet";
+    private bool rewardGiven = false;
+
     public int foodsCollected = 0;
     public bool gameStarted = false;
     public bool gameEnded = false;
@@ -100,6 +104,15 @@ public class GameManager : MonoBehaviour
         Time.timeScale = 0f;
         grid.SetActive(false);
 
+        if (!rewardGiven)
+        {
+            rewardGiven = true;
+
+            if (inventory == null)
+                inventory = FindFirstObjectByType<Inventory>();
+            if (inventory != null)
+                inventory.AddItem(rewardItem);
+        }
     }
 
     public void RestartGame()

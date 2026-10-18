@@ -28,7 +28,18 @@ public class InventoryUI : MonoBehaviour
         new ItemLook { item = "ClosetKey", displayName = "Closet Key" },
         new ItemLook { item = "Toy", displayName = "Toy" },
         new ItemLook { item = "DoorKey", displayName = "Door Key" },
+        new ItemLook { item = "MusicSheet", displayName = "Music Sheet" },
     };
+
+    [System.Serializable]
+    public class ViewableItem
+    {
+        public string item;
+        public Sprite image;
+    }
+
+    [Header("Items the player can click to look at")]
+    public List<ViewableItem> viewables = new List<ViewableItem>();
 
     [Header("Coin goal (shown after the crow asks for them)")]
     public List<string> goalCoins = new List<string> { "BookCoin", "StandCoin", "DrawerCoin" };
@@ -47,6 +58,8 @@ public class InventoryUI : MonoBehaviour
     private readonly List<GameObject> slots = new List<GameObject>();
     private bool showCoinGoal = false;
     private readonly HashSet<string> coinsFound = new HashSet<string>();
+    private GameObject viewer;
+    private Image viewerImage;
 
     private void Start()
     {
@@ -126,6 +139,47 @@ public class InventoryUI : MonoBehaviour
             slots.Add(createSlot(lookFor[order[i]], counts[order[i]], index++, false));
     }
 
+    Sprite viewImageFor(string item)
+    {
+        foreach (ViewableItem viewable in viewables)
+        {
+            if (viewable.item == item)
+                return viewable.image;
+        }
+
+        return null;
+    }
+
+    public void ShowView(Sprite image)
+    {
+        if (viewer == null)
+        {
+            viewer = newUI("ItemViewer", canvas.transform);
+            RectTransform rect = viewer.GetComponent<RectTransform>();
+            rect.anchorMin = Vector2.zero;
+            rect.anchorMax = Vector2.one;
+            rect.sizeDelta = Vector2.zero;
+            Image dim = viewer.AddComponent<Image>();
+            dim.color = new Color(0f, 0f, 0f, 0.75f);
+            Button close = viewer.AddComponent<Button>();
+            close.transition = Selectable.Transition.None;
+            close.onClick.AddListener(() => viewer.SetActive(false));
+
+            GameObject picture = newUI("Image", rect);
+            RectTransform pictureRect = picture.GetComponent<RectTransform>();
+            pictureRect.anchorMin = new Vector2(0.05f, 0.05f);
+            pictureRect.anchorMax = new Vector2(0.95f, 0.95f);
+            pictureRect.sizeDelta = Vector2.zero;
+            viewerImage = picture.AddComponent<Image>();
+            viewerImage.preserveAspect = true;
+            viewerImage.raycastTarget = false;
+        }
+
+        viewerImage.sprite = image;
+        viewer.transform.SetAsLastSibling();
+        viewer.SetActive(true);
+    }
+
     ItemLook findLook(string item)
     {
         foreach (ItemLook look in looks)
@@ -157,9 +211,20 @@ public class InventoryUI : MonoBehaviour
         Image icon = iconObject.AddComponent<Image>();
         icon.raycastTarget = false;
 
-        if (look.icon != null)
+        Sprite view = missing ? null : viewImageFor(look.item);
+        if (view != null)
         {
-            icon.sprite = look.icon;
+            background.raycastTarget = true;
+            Button open = slot.AddComponent<Button>();
+            open.transition = Selectable.Transition.None;
+            open.onClick.AddListener(() => ShowView(view));
+            slot.AddComponent<HandCursorOnHover>();
+        }
+
+        Sprite iconSprite = look.icon != null ? look.icon : view;
+        if (iconSprite != null)
+        {
+            icon.sprite = iconSprite;
             icon.preserveAspect = true;
             if (missing)
                 icon.color = missingCoinColor;

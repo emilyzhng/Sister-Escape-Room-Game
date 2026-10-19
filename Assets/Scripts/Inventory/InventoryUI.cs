@@ -4,7 +4,7 @@ using UnityEngine.UI;
 using TMPro;
 
 // Shows what the player is carrying as a column of slots down the left edge of the screen.
-// Items with the same display name (e.g. the three gold coins) share one slot with a count.
+// Items with the same display name share one slot with a count; gold coins always get one slot each at the top.
 public class InventoryUI : MonoBehaviour
 {
     [System.Serializable]
@@ -57,6 +57,7 @@ public class InventoryUI : MonoBehaviour
     private RectTransform bar;
     private readonly List<GameObject> slots = new List<GameObject>();
     private bool showCoinGoal = false;
+    private bool coinGoalDone = false;
     private readonly HashSet<string> coinsFound = new HashSet<string>();
     private GameObject viewer;
     private Image viewerImage;
@@ -86,10 +87,17 @@ public class InventoryUI : MonoBehaviour
 
     public void ShowCoinGoal()
     {
-        if (showCoinGoal)
+        if (showCoinGoal || coinGoalDone)
             return;
 
         showCoinGoal = true;
+        Refresh();
+    }
+
+    public void EndCoinGoal()
+    {
+        coinGoalDone = true;
+        showCoinGoal = false;
         Refresh();
     }
 
@@ -107,10 +115,12 @@ public class InventoryUI : MonoBehaviour
 
         int index = 0;
 
-        if (showCoinGoal)
+        foreach (string coin in goalCoins)
         {
-            foreach (string coin in goalCoins)
+            if (showCoinGoal)
                 slots.Add(createSlot(findLook(coin), 1, index++, !coinsFound.Contains(coin)));
+            else if (inventory.HasItem(coin))
+                slots.Add(createSlot(findLook(coin), 1, index++, false));
         }
 
         // group by display name, in the order things were picked up
@@ -120,7 +130,7 @@ public class InventoryUI : MonoBehaviour
 
         foreach (string item in inventory.inventoryItems)
         {
-            if (showCoinGoal && goalCoins.Contains(item))
+            if (goalCoins.Contains(item))
                 continue;
 
             ItemLook look = findLook(item);

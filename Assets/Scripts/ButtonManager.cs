@@ -1029,8 +1029,12 @@ public class ButtonManager : MonoBehaviour
             inventory.RemoveItem("StandCoin");
             inventory.RemoveItem("BookCoin");
 
-            tempGetKeyFromCrow.SetActive(true);
+            inventory.AddItem("ClosetKey");
             submitCrowCoin.SetActive(false);
+
+            InventoryUI inventoryUI = inventory.GetComponent<InventoryUI>();
+            if (inventoryUI != null)
+                inventoryUI.EndCoinGoal();
             submittedGoldCoins = true; 
             foreach (string item in inventory.inventoryItems)
             {

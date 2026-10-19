@@ -2,15 +2,18 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DropBooks : MonoBehaviour, IDropHandler
+public class DropBooks : MonoBehaviour, IDropHandler, IDropSlot
 {
     public string correctDrop;
     public GameObject completedObject;
 
+    private bool correct = false;
+    public static int correctBoxes = 0;
+    private DragDrop occupant;
     private static readonly List<DropBooks> allSlots = new List<DropBooks>();
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-    static void resetBetweenPlays()
+    static void ResetSlots()
     {
         allSlots.Clear();
     }
@@ -25,6 +28,15 @@ public class DropBooks : MonoBehaviour, IDropHandler
         allSlots.Remove(this);
     }
 
+    void LockAll()
+    {
+        foreach (DropBooks slot in allSlots)
+        {
+            if (slot.occupant != null)
+                slot.occupant.Lock();
+        }
+    }
+
     public void OnDrop(PointerEventData eventData)
     {
         if (eventData.pointerDrag == null)
@@ -35,65 +47,54 @@ public class DropBooks : MonoBehaviour, IDropHandler
         if (item == null)
             return;
 
-        foreach (DragDrop other in FindObjectsByType<DragDrop>(FindObjectsSortMode.None))
+        if (occupant != null && occupant != item)
         {
-            if (other != item && isInSlot(other))
-                other.ReturnToStart();
+            item.ReturnToStart();
+            return;
         }
 
-        eventData.pointerDrag.GetComponent<RectTransform>().position = GetComponent<RectTransform>().position;
+        occupant = item;
+        item.slot = this;
         item.placed = true;
-        Debug.Log(item.item == correctDrop ? "Correct!" : "Wrong!");
 
-        checkSolved();
-    }
+        RectTransform draggedRect = eventData.pointerDrag.GetComponent<RectTransform>();
+        RectTransform dropRect = GetComponent<RectTransform>();
+        draggedRect.position = dropRect.position;
 
-    bool isInSlot(DragDrop piece)
-    {
-        return Vector2.Distance(piece.transform.position, transform.position) < 1f;
-    }
-
-    void checkSolved()
-    {
-        DragDrop[] pieces = FindObjectsByType<DragDrop>(FindObjectsSortMode.None);
-        List<DragDrop> inPlace = new List<DragDrop>();
-
-        foreach (DropBooks slot in allSlots)
+        if (item.item == correctDrop && !correct)
         {
-            DragDrop piece = slot.pieceInSlot(pieces);
+            correct = true;
+            correctBoxes++;
 
-            if (piece != null)
-                inPlace.Add(piece);
+            Debug.Log("Correct! " + correctBoxes);
+
+            if (correctBoxes == 4)
+            {
+                LockAll();
+                completedObject.SetActive(true);
+                Debug.Log("solved!");
+            }
+        }
+        else
+        {
+            Debug.Log("Wrong!");
         }
 
-        Debug.Log("In place: " + inPlace.Count + " / " + allSlots.Count);
+        Debug.Log("OnDrop");
+    }
 
-        if (inPlace.Count < allSlots.Count)
+    public void PieceRemoved(DragDrop piece)
+    {
+        if (piece != occupant)
             return;
 
-        foreach (DragDrop piece in inPlace)
-        {
-            piece.locked = true;
+        occupant = null;
 
-            HandCursorOnHover hover = piece.GetComponent<HandCursorOnHover>();
-            if (hover != null)
-                hover.enabled = false;
-        }
+        if (!correct)
+            return;
 
-        if (completedObject != null)
-            completedObject.SetActive(true);
-
-        Debug.Log("solved!");
-    }
-
-    DragDrop pieceInSlot(DragDrop[] pieces)
-    {
-        foreach (DragDrop piece in pieces)
-        {
-            if (piece.item == correctDrop && isInSlot(piece))
-                return piece;
-        }
-
-        return null;
+        correct = false;
+        correctBoxes--;
+        Debug.Log("Taken away! " + correctBoxes);
     }
 }

@@ -2,88 +2,110 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DropMusicNotes : MonoBehaviour, IDropHandler
+public class DropMusicNotes : MonoBehaviour, IDropHandler, IDropSlot
 {
     public string correctDrop;
     public GameObject completedObject;
     public bool need;
     public string hintItem = "MusicSheet";
 
-    private static readonly List<DropMusicNotes> answerSpots = new List<DropMusicNotes>();
+    private bool correct = false;
+    public static int correctBoxes = 0;
+    private DragDrop occupant;
+    private static readonly List<DropMusicNotes> allSlots = new List<DropMusicNotes>();
 
     [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
-    static void resetBetweenPlays()
+    static void ResetSlots()
     {
-        answerSpots.Clear();
+        allSlots.Clear();
     }
 
     private void Awake()
     {
-        if (need)
-            answerSpots.Add(this);
+        allSlots.Add(this);
     }
 
     private void OnDestroy()
     {
-        answerSpots.Remove(this);
+        allSlots.Remove(this);
+    }
+
+    void LockAll()
+    {
+        foreach (DropMusicNotes slot in allSlots)
+        {
+            if (slot.occupant != null)
+                slot.occupant.Lock();
+        }
     }
 
     public void OnDrop(PointerEventData eventData)
     {
-        if (eventData.pointerDrag == null)
-            return;
-
         DragDrop item = eventData.pointerDrag.GetComponent<DragDrop>();
 
-        if (item == null)
+        if (occupant != null && occupant != item)
+        {
+            item.ReturnToStart();
+            return;
+        }
+
+        occupant = item;
+        item.slot = this;
+
+        if (item.item == correctDrop && correct == false)
+        {
+            correct = true;
+
+            if (need)
+            {
+                correctBoxes++;
+                Debug.Log("Correct! " + correctBoxes);
+
+                if (correctBoxes == 9)
+                {
+                    LockAll();
+                    completedObject.SetActive(true);
+
+                    Inventory inventory = FindFirstObjectByType<Inventory>();
+                    if (inventory != null)
+                        inventory.RemoveItem(hintItem);
+
+                    Debug.Log("solved!");
+                }
+            }
+            else
+            {
+                Debug.Log("Correct, but not needed!");
+            }
+        }
+        else
+        {
+            Debug.Log("Wrong!");
+        }
+
+        if (eventData.pointerDrag != null)
+        {
+            eventData.pointerDrag.GetComponent<RectTransform>().position =
+    GetComponent<RectTransform>().position;
+        }
+    }
+
+    public void PieceRemoved(DragDrop piece)
+    {
+        if (piece != occupant)
             return;
 
-        eventData.pointerDrag.GetComponent<RectTransform>().position =
-            GetComponent<RectTransform>().position;
+        occupant = null;
 
-        Debug.Log((need && item.item == correctDrop ? "Correct spot: " : "Wrong spot: ") +
-            transform.parent.name + "/" + name);
+        if (!correct)
+            return;
 
-        checkSolved();
-    }
+        correct = false;
 
-    void checkSolved()
-    {
-        DragDrop[] pieces = FindObjectsByType<DragDrop>(FindObjectsSortMode.None);
-        int filled = 0;
-
-        foreach (DropMusicNotes spot in answerSpots)
+        if (need)
         {
-           if (spot.hasNote(pieces))
-           {
-                filled++;
-           }
+            correctBoxes--;
+            Debug.Log("Taken away! " + correctBoxes);
         }
-
-       Debug.Log("Notes in place: " + filled + " / " + answerSpots.Count);
- 
-        if (answerSpots.Count > 0 && filled == answerSpots.Count)
-        {
-            if (completedObject != null)
-                completedObject.SetActive(true);
-
-            Inventory inventory = FindFirstObjectByType<Inventory>();
-            if (inventory != null)
-                inventory.RemoveItem(hintItem);
-
-            Debug.Log("solved!");
-        }
-    }
-
-    bool hasNote(DragDrop[] pieces)
-    {
-        foreach (DragDrop piece in pieces)
-        {
-            if (piece.item == correctDrop &&
-                Vector2.Distance(piece.transform.position, transform.position) < 1f)
-                return true;
-        }
-
-        return false;
     }
 }

@@ -76,12 +76,18 @@ public class ButtonManager : MonoBehaviour
    public GameObject ChestKeyButton;
 
    //computer password
-   public TMP_InputField computerCodeInput;
    public string computerCode = "1234";
    public string wrongPasswordMessage = "Wrong password";
    public Color wrongPasswordColor = new Color(0.9f, 0.2f, 0.2f);
    public float wrongPasswordFontSize = 48f;
+   public Vector2 keypadPosition = new Vector2(0f, 525f);
+   public float loginButtonGap = 30f;
+   public float loginButtonScale = 0.765f;
+   public float loginButtonHeight = 120f;
    private TMP_Text passwordErrorText;
+   private GameObject computerKeypad;
+   private string enteredCode = "";
+   private static readonly string[] keypadLetters = { "", "ABC", "DEF", "GHI", "JKL", "MNO", "PQRS", "TUV", "WXYZ" };
 
    //temp buttons
    public GameObject tempComputerCodeFinishButton;
@@ -146,10 +152,7 @@ public class ButtonManager : MonoBehaviour
 
     void Start()
     {
-        if (computerCodeInput == null)
-            createComputerCodeInput();
-
-        createPasswordErrorText();
+        createComputerKeypad();
 
         InventoryUI inventoryUI = inventory.GetComponent<InventoryUI>();
         foreach (DialogueManager dialogueManager in FindObjectsByType<DialogueManager>(FindObjectsSortMode.None))
@@ -329,7 +332,7 @@ public class ButtonManager : MonoBehaviour
             frontComputerUnlockView.SetActive(false);
             frontComputerView.SetActive(false);
             submitCompCodeButton.SetActive(false);
-            showComputerCodeInput(false);
+            showComputerKeypad(false);
             tempComputerCodeFinishButton.SetActive(false);
             computerButton.SetActive(true);
             goDrawersButton.SetActive(true);
@@ -579,7 +582,7 @@ public class ButtonManager : MonoBehaviour
         // temp unlock button hidden now that the password box works
         // tempComputerCodeFinishButton.SetActive(true);
         submitCompCodeButton.SetActive(true);
-        showComputerCodeInput(true);
+        showComputerKeypad(true);
         computerButton.SetActive(false);
         goDrawersButton.SetActive(false);
 
@@ -588,22 +591,22 @@ public class ButtonManager : MonoBehaviour
             frontComputerUnlockView.SetActive(true);
             tempComputerCodeFinishButton.SetActive(false);
             submitCompCodeButton.SetActive(false);
-            showComputerCodeInput(false);
+            showComputerKeypad(false);
         }
     }
 
     public void clickSubmitComputerCode()
     {
-        if (!computerPasswrod && computerCodeInput != null)
+        if (!computerPasswrod)
         {
-            if (computerCodeInput.text.Trim() == computerCode)
+            if (enteredCode == keypadDigits(computerCode))
             {
                 computerPasswrod = true;
             }
             else
             {
                 Debug.Log("Wrong computer password");
-                computerCodeInput.text = "";
+                enteredCode = "";
                 passwordErrorText.gameObject.SetActive(true);
             }
         }
@@ -613,7 +616,7 @@ public class ButtonManager : MonoBehaviour
             frontComputerUnlockView.SetActive(true);
             tempComputerCodeFinishButton.SetActive(false);
             submitCompCodeButton.SetActive(false);
-            showComputerCodeInput(false);
+            showComputerKeypad(false);
             frontComputerView.SetActive(false);
             goGameButton.SetActive(true);
             goLetterButton.SetActive(true);
@@ -622,77 +625,122 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
-    void createComputerCodeInput()
+    void showComputerKeypad(bool show)
     {
-        GameObject inputObject = TMP_DefaultControls.CreateInputField(new TMP_DefaultControls.Resources());
-        inputObject.name = "ComputerCodeInput";
-
-        Transform submitButton = submitCompCodeButton.transform;
-        inputObject.transform.SetParent(submitButton.parent, false);
-        inputObject.transform.SetSiblingIndex(submitButton.GetSiblingIndex());
-
-        // sit directly left of the Login button, on the same line
-        RectTransform buttonRect = submitButton.GetComponent<RectTransform>();
-        RectTransform rect = inputObject.GetComponent<RectTransform>();
-        float width = 500f;
-        float gap = 50f;
-        float buttonWidth = buttonRect.rect.width * buttonRect.localScale.x;
-        float buttonHeight = buttonRect.rect.height * buttonRect.localScale.y;
-        rect.sizeDelta = new Vector2(width, buttonHeight);
-        rect.anchoredPosition = new Vector2(
-            buttonRect.anchoredPosition.x - buttonWidth / 2f - gap - width / 2f,
-            buttonRect.anchoredPosition.y);
-
-        computerCodeInput = inputObject.GetComponent<TMP_InputField>();
-        computerCodeInput.characterLimit = 10;
-        computerCodeInput.textComponent.fontSize = 80;
-        computerCodeInput.textComponent.alignment = TextAlignmentOptions.Center;
-
-        TMP_Text placeholder = (TMP_Text)computerCodeInput.placeholder;
-        placeholder.text = "Password";
-        placeholder.fontSize = 80;
-        placeholder.alignment = TextAlignmentOptions.Center;
-
-        inputObject.SetActive(false);
-    }
-
-    void showComputerCodeInput(bool show)
-    {
-        if (computerCodeInput == null)
+        if (computerKeypad == null)
             return;
 
-        computerCodeInput.text = "";
+        enteredCode = "";
         passwordErrorText.gameObject.SetActive(false);
-        computerCodeInput.gameObject.SetActive(show);
+        computerKeypad.SetActive(show);
     }
 
-    // small red message just above the password box; hidden again once the player types
-    void createPasswordErrorText()
+    void createComputerKeypad()
     {
-        GameObject errorObject = new GameObject("PasswordError", typeof(RectTransform));
-        errorObject.transform.SetParent(computerCodeInput.transform, false);
+        float keyWidth = 188f;
+        float keyHeight = 145f;
+        float gap = 12f;
 
-        RectTransform rect = errorObject.GetComponent<RectTransform>();
-        rect.anchorMin = new Vector2(0f, 1f);
-        rect.anchorMax = new Vector2(1f, 1f);
-        rect.pivot = new Vector2(0.5f, 0f);
-        rect.anchoredPosition = new Vector2(0f, 10f);
-        rect.sizeDelta = new Vector2(0f, wrongPasswordFontSize * 1.5f);
+        RectTransform buttonRect = submitCompCodeButton.GetComponent<RectTransform>();
+        float padHeight = keyHeight * 3f + gap * 2f;
+        buttonRect.localScale = new Vector3(loginButtonScale, loginButtonScale, 1f);
+        buttonRect.sizeDelta = new Vector2(buttonRect.sizeDelta.x, loginButtonHeight);
+        buttonRect.anchoredPosition = new Vector2(keypadPosition.x,
+            keypadPosition.y - padHeight / 2f - loginButtonGap - loginButtonHeight * loginButtonScale / 2f);
+
+        computerKeypad = new GameObject("ComputerKeypad", typeof(RectTransform));
+        computerKeypad.transform.SetParent(buttonRect.parent, false);
+        computerKeypad.transform.SetSiblingIndex(buttonRect.GetSiblingIndex());
+        RectTransform padRect = computerKeypad.GetComponent<RectTransform>();
+        padRect.sizeDelta = new Vector2(keyWidth * 3f + gap * 2f, padHeight);
+        padRect.anchoredPosition = keypadPosition;
+
+        for (int i = 0; i < 9; i++)
+        {
+            string digit = (i + 1).ToString();
+
+            GameObject key = new GameObject("Key " + digit, typeof(RectTransform));
+            key.transform.SetParent(padRect, false);
+            RectTransform keyRect = key.GetComponent<RectTransform>();
+            keyRect.sizeDelta = new Vector2(keyWidth, keyHeight);
+            keyRect.anchoredPosition = new Vector2((i % 3 - 1) * (keyWidth + gap), (1 - i / 3) * (keyHeight + gap));
+
+            UnityEngine.UI.Image background = key.AddComponent<UnityEngine.UI.Image>();
+            background.color = new Color(0.16f, 0.2f, 0.17f, 0.9f);
+
+            UnityEngine.UI.Button button = key.AddComponent<UnityEngine.UI.Button>();
+            button.targetGraphic = background;
+            UnityEngine.UI.ColorBlock colors = button.colors;
+            colors.highlightedColor = new Color(1.3f, 1.3f, 1.3f);
+            colors.pressedColor = new Color(0.7f, 0.7f, 0.7f);
+            button.colors = colors;
+            button.onClick.AddListener(() => pressKeypad(digit));
+            key.AddComponent<HandCursorOnHover>();
+
+            GameObject label = new GameObject("Text", typeof(RectTransform));
+            label.transform.SetParent(keyRect, false);
+            RectTransform labelRect = label.GetComponent<RectTransform>();
+            labelRect.anchorMin = Vector2.zero;
+            labelRect.anchorMax = Vector2.one;
+            labelRect.sizeDelta = Vector2.zero;
+
+            TextMeshProUGUI text = label.AddComponent<TextMeshProUGUI>();
+            text.text = digit;
+            text.fontSize = 65f;
+            text.color = new Color(0.85f, 0.95f, 0.8f);
+            text.alignment = TextAlignmentOptions.Center;
+            text.raycastTarget = false;
+        }
+
+        GameObject errorObject = new GameObject("PasswordError", typeof(RectTransform));
+        errorObject.transform.SetParent(padRect, false);
+
+        RectTransform errorRect = errorObject.GetComponent<RectTransform>();
+        errorRect.anchorMin = new Vector2(0f, 1f);
+        errorRect.anchorMax = new Vector2(1f, 1f);
+        errorRect.pivot = new Vector2(0.5f, 0f);
+        errorRect.sizeDelta = new Vector2(0f, wrongPasswordFontSize * 1.5f);
+        errorRect.anchoredPosition = new Vector2(0f, 10f);
 
         passwordErrorText = errorObject.AddComponent<TextMeshProUGUI>();
         passwordErrorText.text = wrongPasswordMessage;
         passwordErrorText.color = wrongPasswordColor;
         passwordErrorText.fontSize = wrongPasswordFontSize;
-        passwordErrorText.alignment = TextAlignmentOptions.Left;
+        passwordErrorText.alignment = TextAlignmentOptions.Center;
         passwordErrorText.raycastTarget = false;
-
-        computerCodeInput.onValueChanged.AddListener(text =>
-        {
-            if (text.Length > 0)
-                passwordErrorText.gameObject.SetActive(false);
-        });
-
         errorObject.SetActive(false);
+
+        computerKeypad.SetActive(false);
+    }
+
+    void pressKeypad(string digit)
+    {
+        passwordErrorText.gameObject.SetActive(false);
+
+        if (enteredCode.Length < 10)
+            enteredCode += digit;
+    }
+
+    string keypadDigits(string code)
+    {
+        string digits = "";
+
+        foreach (char c in code.Trim().ToUpperInvariant())
+        {
+            if (char.IsDigit(c))
+            {
+                digits += c;
+                continue;
+            }
+
+            for (int i = 0; i < keypadLetters.Length; i++)
+            {
+                if (keypadLetters[i].IndexOf(c) >= 0)
+                    digits += (i + 1).ToString();
+            }
+        }
+
+        return digits;
     }
 
     public void clickPainting()
@@ -1002,6 +1050,10 @@ public class ButtonManager : MonoBehaviour
 
     public void addDoorKey()
     {
+        if (coinsCollected.Contains("DoorKey"))
+            return;
+
+        coinsCollected.Add("DoorKey");
         inventory.AddItem("DoorKey");
         foreach (string item in inventory.inventoryItems)
         {

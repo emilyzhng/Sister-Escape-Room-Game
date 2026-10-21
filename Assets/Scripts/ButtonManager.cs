@@ -256,6 +256,9 @@ public class ButtonManager : MonoBehaviour
 
     public void downMain()
     {
+        if (closeOpenPopup())
+            return;
+
         if (frontView.activeSelf && screwdriverTaken)
         {
             frontView.SetActive(false);
@@ -900,6 +903,24 @@ public class ButtonManager : MonoBehaviour
         }
     }
 
+    bool closeOpenPopup()
+    {
+        if (popComputerGame.activeSelf)
+            xPopGame();
+        else if (popComputerLetter.activeSelf)
+            xPopLetter();
+        else if (popBookSort.activeSelf)
+            xPopBook();
+        else if (popStandSort.activeSelf)
+            xPopStand();
+        else if (popPapers.activeSelf)
+            xPopPapers();
+        else
+            return false;
+
+        return true;
+    }
+
     public void clickPapers()
     {
         popPapers.SetActive(true);
@@ -919,7 +940,6 @@ public class ButtonManager : MonoBehaviour
     {
         popComputerGame.SetActive(true);
         compDialogue.SetActive(false);
-        downButton.SetActive(false);
         goGameButton.SetActive(false);
         goLetterButton.SetActive(false);
     }
@@ -927,21 +947,18 @@ public class ButtonManager : MonoBehaviour
     public void clickPopBook()
     {
         popBookSort.SetActive(true);
-        downButton.SetActive(false);
         goBookPopButton.SetActive(false);
     }
 
     public void clickPopStand()
     {
         popStandSort.SetActive(true);
-        downButton.SetActive(false);
         goStandPopButton.SetActive(false);
     }
 
     public void clickPopLetter()
     {
         popComputerLetter.SetActive(true);
-        downButton.SetActive(false);
         goGameButton.SetActive(false);
         goLetterButton.SetActive(false);
     }

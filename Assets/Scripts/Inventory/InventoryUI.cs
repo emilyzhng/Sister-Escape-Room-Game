@@ -38,6 +38,16 @@ public class InventoryUI : MonoBehaviour
         public Sprite image;
     }
 
+    [System.Serializable]
+    public class ItemIcon
+    {
+        public string item;
+        public Sprite icon;
+    }
+
+    [Header("Inventory icons")]
+    public List<ItemIcon> icons = new List<ItemIcon>();
+
     [Header("Items the player can click to look at")]
     public List<ViewableItem> viewables = new List<ViewableItem>();
 
@@ -149,6 +159,17 @@ public class InventoryUI : MonoBehaviour
             slots.Add(createSlot(lookFor[order[i]], counts[order[i]], index++, false));
     }
 
+    Sprite iconFor(string item)
+    {
+        foreach (ItemIcon itemIcon in icons)
+        {
+            if (itemIcon.item == item)
+                return itemIcon.icon;
+        }
+
+        return null;
+    }
+
     Sprite viewImageFor(string item)
     {
         foreach (ViewableItem viewable in viewables)
@@ -231,7 +252,9 @@ public class InventoryUI : MonoBehaviour
             slot.AddComponent<HandCursorOnHover>();
         }
 
-        Sprite iconSprite = look.icon != null ? look.icon : view;
+        Sprite iconSprite = look.icon != null ? look.icon : iconFor(look.item);
+        if (iconSprite == null)
+            iconSprite = view;
         if (iconSprite != null)
         {
             icon.sprite = iconSprite;

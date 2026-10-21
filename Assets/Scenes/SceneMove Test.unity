@@ -10448,7 +10448,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: dbe23025f855fa14cbdae5dfa99f85cb, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a1ae0c0042a940fc9d0078436a4e0dcc, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12641,6 +12641,7 @@ MonoBehaviour:
   frontMedalView: {fileID: 522932177}
   frontStandView: {fileID: 611810747}
   frontChestView: {fileID: 354420017}
+  frontChestDoorKeySprite: {fileID: 21300000, guid: 4877645449024c3194fbaa1ae4c6050e, type: 3}
   frontDrawerView: {fileID: 138882156}
   frontCatMoveView: {fileID: 1038666789}
   leftView: {fileID: 187877232}
@@ -12710,6 +12711,8 @@ MonoBehaviour:
   TempCompSolvedButton: {fileID: 1490294857}
   TempBookSolvedButton: {fileID: 1325880807}
   TempStandSolvedButton: {fileID: 0}
+  TempPapersSolved: {fileID: 125969113}
+  TempPapersSolvedButton: {fileID: 1511554780}
   crowPopDialogue: {fileID: 107278230}
   standDialogue: {fileID: 1413844989}
   catDialogue: {fileID: 789348118}
@@ -26440,7 +26443,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 735452187}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
-        m_MethodName: clickTempStandSolve
+        m_MethodName: clickTempPapersSolve
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -38214,6 +38217,9 @@ MonoBehaviour:
   canvas: {fileID: 0}
   roundedBox: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   circle: {fileID: 10913, guid: 0000000000000000f000000000000000, type: 0}
+  icons:
+  - item: DoorKey
+    icon: {fileID: 21300000, guid: 1002774267324a04bf52f0c3ea1988a9, type: 3}
   viewables:
   - item: MusicSheet
     image: {fileID: 21300000, guid: c950c802546f42db87ecf3da2b00754f, type: 3}

@@ -22,6 +22,7 @@ public class ButtonManager : MonoBehaviour
    public GameObject frontMedalView;
    public GameObject frontStandView;
    public GameObject frontChestView;
+   public Sprite frontChestDoorKeySprite;
    public GameObject frontDrawerView;
    public GameObject frontCatMoveView;
 
@@ -115,6 +116,8 @@ public class ButtonManager : MonoBehaviour
    public GameObject TempCompSolvedButton;
    public GameObject TempBookSolvedButton;
    public GameObject TempStandSolvedButton;
+   public GameObject TempPapersSolved;
+   public GameObject TempPapersSolvedButton;
    //pop up dialogue
    public GameObject crowPopDialogue;
    public GameObject standDialogue;
@@ -136,6 +139,7 @@ public class ButtonManager : MonoBehaviour
    private bool toyCollected = false;
    private readonly HashSet<string> coinsCollected = new HashSet<string>();
    private bool catMoved = false;
+   private bool papersSolved = false;
 
 
 
@@ -805,8 +809,8 @@ public class ButtonManager : MonoBehaviour
         goStandButton.SetActive(false);
         goMedalButton.SetActive(false);      
         windowButton.SetActive(false); 
-        goChesteButton.SetActive(false);       
-        ChestKeyButton.SetActive(true);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+        goChesteButton.SetActive(false);
+        ChestKeyButton.SetActive(papersSolved);                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
     }
 
     public void clickStand()
@@ -994,6 +998,19 @@ public class ButtonManager : MonoBehaviour
     {
         TempStandSolved.SetActive(true);
         TempStandSolvedButton.SetActive(false);
+    }
+
+    public void clickTempPapersSolve()
+    {
+        TempPapersSolved.SetActive(true);
+        TempPapersSolvedButton.SetActive(false);
+        solvePapers();
+    }
+
+    void solvePapers()
+    {
+        papersSolved = true;
+        frontChestView.GetComponent<UnityEngine.UI.Image>().sprite = frontChestDoorKeySprite;
     }
 
     public void submitPainting()

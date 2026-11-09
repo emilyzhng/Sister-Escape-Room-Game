@@ -77,7 +77,7 @@ public class ButtonManager : MonoBehaviour
    public GameObject ChestKeyButton;
 
    //computer password
-   public string computerCode = "1234";
+   private const string computerCode = "7415369";
    public string wrongPasswordMessage = "Wrong password";
    public Color wrongPasswordColor = new Color(0.9f, 0.2f, 0.2f);
    public float wrongPasswordFontSize = 48f;
